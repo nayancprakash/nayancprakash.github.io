@@ -1,0 +1,98 @@
+html{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.headertop{
+    background: rgb(230,230,230,0.7);
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+}
+
+.headerlist{
+    display: inline;
+    text-align: center;
+    list-style: none;
+}
+
+li{
+    display: inline;
+    text-align: center;
+    padding-left: 15%;
+}
+
+.name{
+    font-family: 'Bookman Old Style';
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+div{
+    height: 100vh;
+    width: 100%;
+}
+
+#div1{
+    background-image: url("Stonewallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+#div2{
+    background-color: orange;
+}
+
+#div3{
+    background-color: green;
+}
+
+#div4{
+    background-color: blue;
+}
+
+#ScrollDown{
+    position:
+}
+
+h2{
+    text-align: center;
+    padding: 13vh;
+    margin-top: 0;
+}
+
+p{
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#a1:hover{
+    color: black;
+}
+
+#a2:hover{
+    color: orange;
+}
+
+#a3:hover{
+    color: green;
+}
+
+#a4:hover{
+    color: blue;
+}
