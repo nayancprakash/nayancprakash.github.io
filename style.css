@@ -42,6 +42,22 @@ div{
     width: 100%;
 }
 
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255,255,255,0.7);
+    width: 60%;
+    height: 40%;
+    margin-left: 20%;
+    border: box;
+    border-radius: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    color: black;
+}
+
 #div1{
     background-image: url("Stonewallpaper.jpg");
     background-size: cover;
