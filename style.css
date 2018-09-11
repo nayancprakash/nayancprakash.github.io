@@ -12,13 +12,14 @@ body{
 }
 
 .headertop{
-    background-color: rgb(230,230,230, 0.7);
-    height: 10vh;
+    background-color: #18272B;
+    height: 6vh;
     width: 100%;
     position: fixed;
     display: flex;
     justify-content:flex-start;
     padding-left: 1%;
+    z-index: 3;
 }
 
 .headerlist{
@@ -39,6 +40,7 @@ li{
     padding: 0;
     text-align: center;
     margin: 0;
+    color: white;
 }
 
 div{
@@ -72,15 +74,15 @@ div{
 }
 
 #div2{
-    background-color: orange;
+    background-color: #426C78;
 }
 
 #div3{
-    background-color: green;
+    background-color: white;
 }
 
 #div4{
-    background-color: blue;
+    background-color: #2B2B2B;
 }
 
 #ScrollDown{
@@ -102,8 +104,16 @@ a{
     text-decoration: none;
 }
 
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+}
+
 #a1:hover{
-    color: black;
+    color: orange;
 }
 
 #a2:hover{
@@ -111,9 +121,9 @@ a{
 }
 
 #a3:hover{
-    color: green;
+    color: orange;
 }
 
 #a4:hover{
-    color: blue;
+    color: orange;
 }
