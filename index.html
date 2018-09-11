@@ -3,8 +3,7 @@
     <head>
         <title>Nayan Prakash</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js">AOS.init();</script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
 
     <header class="headertop">
@@ -19,15 +18,15 @@
 
     <body>
 
-        <div id="div1">
+        <div id="div1" data-aos="fade-right">
             <!--<img src="Stonewallpaper.jpg" alt="" height="100%" width="100%">-->
             <h2>About</h2>
-            <div class="content" data-aos="fade-up">
+            <div class="content">
                 <p>Hi! I'm Nayan Prakash. I am a Software Engineering Student at the University of Alberta</p>
             </div>
         </div>
 
-        <div id="div2" data-aos="fade-up">
+        <div id="div2" data-aos="fade-left">
             <h2>Skills</h2>
             <div class="content">
                 <h3>Languages</h3>
@@ -59,6 +58,11 @@
                 <p>Hi! I'm Nayan Prakash. I am a Software Engineering Student at the University of Alberta</p>
             </div>
         </div>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 
     </body>
 
