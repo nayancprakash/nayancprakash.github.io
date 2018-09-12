@@ -9,24 +9,27 @@
     <header class="headertop">
         <h1 class="name">Nayan Prakash</h1>
         <ul class="headerlist">
-            <li><!--<a href="index.html#div1" id="a1">About</a>--><span id="a1">Skills</span></li>
+            <li><!--<a href="index.html#div1" id="a1">About</a>--><span id="a1">About</span></li>
             <li><!---<a href="" id="a2">Skills</a><--><span id="a2">Skills</span></--></li>
-            <li><!--<a href="index.html#div3" id="a3">Education</a>--><span id="a3">Skills</span></li>
-            <li><!--<a href="index.html#div4" id="a4">Contact</a>--><span id="a4">Skills</span></li>
+            <li><!--<a href="index.html#div3" id="a3">Education</a>--><span id="a3">Education</span></li>
+            <li><!--<a href="index.html#div4" id="a4">Contact</a>--><span id="a4">Contact</span></li>
         </ul>
     </header>
 
     <body>
 
         <div id="div1">
-            <h2>About</h2>
-            <div class="content">
-                <p>Hi! I'm Nayan Prakash. I am a Software Engineering Student at the University of Alberta</p>
+            <div id="aboutcontent">
+                <h2>Hi!</h2>
+                <hr>
+                <p>I am a Computer Software Engineering Student at the University of Alberta.</p>
             </div>
+            <img src="ScrollDown3.png" alt="" id="goDownButton" width="64" height="64">
         </div>
 
         <div id="div2">
             <h2>Skills</h2>
+            <hr>
             <div class="content" data-aos="fade-left">
                 <h3>Languages</h3>
                 <ul>
@@ -70,7 +73,7 @@
                     $('html, body').animate({
                         scrollTop: $("#div1").offset().top}, 1000);
                 });
-                $("#a2").click(function(){
+                $("#a2, #goDownButton").click(function(){
                     $('html, body').animate({
                         scrollTop: $("#div2").offset().top}, 1000);
                 });
