@@ -19,48 +19,100 @@
         <div id="bodyDiv">
 
             <div id="aboutMainDiv">
-                <h1>Hi! I'm Nayan.</h1>
-                
+                <h1 data-aos="fade-left">Hi! I'm Nayan.</h1>
+
                 <p>My name is Nayan Prakash. I am a Computer Engineering Student at the University of Alberta. My drive to learn and create has </p>
             </div>
 
             <div id="skillsMainDiv">
-                <h1>Skills</h1>
-                <hr>
-                <h2>Languages</h2>
-                <ul>
-                    <li>Java</li>
-                    <li>HTML & CSS</li>
-                    <li>Python</li>
-                    <li>JavaScript</li>
-                    <li>Matlab</li>
-                    <li>Processing</li>
-                </ul>
-                <h2>Tools</h2>
-                <ul>
-                    <li>Linux</li>
-                    <li>Bash</li>
-                    <li>Git</li>
-                    <li>Microsoft Office Suite</li>
-                </ul>
+                <div class="titleDiv">
+                    <h1 data-aos="fade-up">Skills</h1>
+                    <hr>
+                </div>
+                <div class="contentDiv">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>Java</li>
+                        <li>HTML & CSS</li>
+                        <li>Python</li>
+                        <li>JavaScript</li>
+                        <li>Matlab</li>
+                        <li>Processing</li>
+                    </ul>
+                    <h2>Tools</h2>
+                    <ul>
+                        <li>Linux</li>
+                        <li>Bash</li>
+                        <li>Git</li>
+                        <li>Microsoft Office Suite</li>
+                    </ul>
+                </div>
             </div>
 
             <div id="educationMainDiv">
-                <h1>Education</h1>
-                <hr>
+                <div class="titleDiv">
+                    <h1 data-aos="fade-up">Education</h1>
+                    <hr>
+                </div>
+                <div class="contentDiv">
+                    <p>asd</p>
+                </div>
             </div>
 
             <div id="extracurricularMainDiv">
-                <h1>Extracurricular</h1>
-                <hr>
-                <ul>
-                    <li>Piano</li>
-                    <li>Fencing</li>
-                    <li>Improv</li>
-                </ul>
+                <div class="titleDiv">
+                    <h1 data-aos="fade-up">Extracurricular</h1>
+                    <hr>
+                </div>
+                <div class="contentDiv">
+                    <h2>Space Exploration Alberta Robotics</h2>
+                    <p>
+                        Space Exploration Alberta Robotics, or SPEAR, is a student design club at the University of Alberta aiming to build a Mars rover.
+                        Being a member of SPEAR may involve the design, use and/or implementation of various hardware, software, mechanical, and electrical systems.
+                        Competing each year against other schools' Mars rovers, this club must also maintain its own finances as well as market itself to additional sponsors.
+                    </p>
+                    <p>
+                        This year, as a member of the AI team, I will be assisting in developing a Computer Vision system that will allow the Mars rover, TARS,
+                        to autonomously navigate its way through unwieldy terrain.
+                    </p>
+                    <h2>Piano</h2>
+                    <p>asd</p>
+                    <h2>Fencing</h2>
+                    <p>asd</p>
+                    <h2>Improvisation</h2>
+                    <p>asd</p>
+                </div>
             </div>
 
         </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#headerAbout").click(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#aboutMainDiv").offset().top}, 1000);
+                });
+                $("#headerSkills").click(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#skillsMainDiv").offset().top}, 1000);
+                });
+                $("#headerEducation").click(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#educationMainDiv").offset().top}, 1000);
+                });
+                $("#headerExtracurricular").click(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#extracurricularMainDiv").offset().top}, 1000);
+                });
+            });
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
 
     </body>
 </html>
