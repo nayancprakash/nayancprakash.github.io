@@ -4,93 +4,169 @@
         <title>Nayan Prakash</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
     </head>
 
     <body>
 
         <header>
-            <h1 id="headerName">Nayan Prakash</h1>
-            <h2 id="headerAbout">About</h2>
-            <h2 id="headerSkills">Skills</h2>
-            <h3 id="headerEducation">Education</h3>
-            <h3 id="headerExtracurricular">Extracurricular</h3>
+            <h1 style="order: 3;" id="headerAbout">About</h1>
+            <h2 style="order: 2;" id="headerSkills">Skills</h2>
+            <h2 style="order: 4;" id="headerEducation">Education</h2>
+            <h4 style="order: 1;" id="headerExtracurricular">Extracurricular</h4>
+            <h4 style="order: 5;" id="headerContact">Contact</h4>
         </header>
 
-        <div id="bodyDiv">
-
-            <div id="aboutMainDiv">
-                <h1 data-aos="fade-left">Hi! I'm Nayan.</h1>
-
-                <p>My name is Nayan Prakash. I am a Computer Engineering Student at the University of Alberta. My drive to learn and create has </p>
-            </div>
-
-            <div id="skillsMainDiv">
-                <div class="titleDiv">
-                    <h1 data-aos="fade-up">Skills</h1>
-                    <hr>
-                </div>
-                <div class="contentDiv">
-                    <h2>Languages</h2>
-                    <ul>
-                        <li>Java</li>
-                        <li>HTML & CSS</li>
-                        <li>Python</li>
-                        <li>JavaScript</li>
-                        <li>Matlab</li>
-                        <li>Processing</li>
-                    </ul>
-                    <h2>Tools</h2>
-                    <ul>
-                        <li>Linux</li>
-                        <li>Bash</li>
-                        <li>Git</li>
-                        <li>Microsoft Office Suite</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="educationMainDiv">
-                <div class="titleDiv">
-                    <h1 data-aos="fade-up">Education</h1>
-                    <hr>
-                </div>
-                <div class="contentDiv">
-                    <p>asd</p>
-                </div>
-            </div>
-
-            <div id="extracurricularMainDiv">
-                <div class="titleDiv">
-                    <h1 data-aos="fade-up">Extracurricular</h1>
-                    <hr>
-                </div>
-                <div class="contentDiv">
-                    <h2>Space Exploration Alberta Robotics</h2>
-                    <p>
-                        Space Exploration Alberta Robotics, or SPEAR, is a student design club at the University of Alberta aiming to build a Mars rover.
-                        Being a member of SPEAR may involve the design, use and/or implementation of various hardware, software, mechanical, and electrical systems.
-                        Competing each year against other schools' Mars rovers, this club must also maintain its own finances as well as market itself to additional sponsors.
-                    </p>
-                    <p>
-                        This year, as a member of the AI team, I will be assisting in developing a Computer Vision system that will allow the Mars rover, TARS,
-                        to autonomously navigate its way through unwieldy terrain.
-                    </p>
-                    <h2>Piano</h2>
-                    <p>asd</p>
-                    <h2>Fencing</h2>
-                    <p>asd</p>
-                    <h2>Improvisation</h2>
-                    <p>asd</p>
-                </div>
-            </div>
-
+        <div id="pictureDiv">
+            <!--<img src="Sky.jpg" style="width: 100%; height: 40vh; "></img>-->
+            <!--<div style="background: rgb(32, 26, 22, 0.0); height: 40vh; width: 100%; position: absolute; top: 0; left: 0;"></div>-->
+            <hr style="width: 15%; color: white; noshade: noshade; border-color: white; border: 0px;">
+            <hr style="width: 15%; color: white; noshade: noshade; border-color: white; border-radius: 10px;" data-aos="fade-up">
+            <h1 style="color: lightgray;" data-aos="fade-up">Nayan Prakash</h1>
+            <hr style="width: 15%; color: white; noshade: noshade; border-color: white; border-radius: 10px;" data-aos="fade-up">
+            <hr style="width: 15%; color: white; noshade: noshade; border-color: white; border: 0px;">
         </div>
 
+        <div id="mainDiv">
+
+            <div id="aboutMainDiv" style="font-family: 'Ubuntu', sans-serif;">
+                <h1>Hi! I'm Nayan.</h1>
+                <h3>I am a second year Computer Engineering student at the University of Alberta.</h3>
+                <div id="horizontalDiv">
+                    <img src="GithubLogo.png" width="32px">
+                    <img src="LinkedinLogo.png" width="32px">
+                </div>
+            </div>
+
+            <div id="extracurricularTitleDiv">
+                <div id="extracurricularTitle">
+                    <hr style="width: 15%; color: white; noshade: noshade; border-color: white; border: 0px;">
+                    <hr style="width: 10%; color: #ACA69C; noshade: noshade; border-color: #ACA69C; border-radius: 10px;">
+                    <h1>Extracurricular</h1>
+                    <hr style="width: 10%; color: white; noshade: noshade; border-color: #ACA69C; border-radius: 10px;">
+                    <hr style="width: 15%; color: #ACA69C; noshade: noshade; border-color: white; border: 0px;">
+                </div>
+                <div id="extracurricularMainDiv">
+                    <div id="extracurricularSections">
+                        <h2 id="CensusTitle">Census</h2>
+                        <h2 id="SPEARTitle">Space Exploration Alberta Robotics</h2>
+                        <h2 id="ImprovTitle">Improvisation</h2>
+                        <h2 id="PianoTitle">Piano</h2>
+                        <h2 id="FencingTitle">Fencing</h2>
+                    </div>
+                    <div id="extracurricularContent">
+                        <div id="CensusContent">
+                            <p>
+                                Census is an area-based polling app currently being developed
+                                by myself and two other Software Engineering Students. Census
+                                is designed to be enjoyable, informative and useful to individuals,
+                                businesses and governments alike.
+                            </p>
+                            <p>
+                                Census is currently being developed using the React Native app
+                                development framework, as well as Node.js as a backend engine which
+                                interfaces with a MYSQL Database.
+                            </p>
+                            <p>
+                                I have taken on the role of a full-stack engineer.
+                            </p>
+                        </div>
+                        <div id="SPEARContent">
+                            <p>
+                                Space Exploration Alberta Robotics, or SPEAR, is a student design club at the University of Alberta aiming to build a Mars rover.
+                                Being a member of SPEAR may involve the design, use and/or implementation of various hardware, software, mechanical, and electrical systems.
+                                Competing each year against other schools' Mars rovers, this club must also maintain its own finances as well as market itself to additional sponsors.
+                            </p>
+                            <p>
+                                This year, as a member of the AI team, I will be assisting in developing a Computer Vision system that will allow the Mars rover, TARS,
+                                to autonomously navigate its way through unwieldy terrain.
+                            </p>
+                        </div>
+                        <div id="ImprovContent">
+
+                        </div>
+                        <div id="PianoContent">
+
+                        </div>
+                        <div id="FencingContent">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <h3>Nayan Prakash</h3>
+        </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
             $(document).ready(function(){
+                var currentExtracurricularContent = "#CensusContent";
+                var currentExtracurricularTitle = "#CensusTitle";
+                $("#CensusTitle").css('color', 'orange');
+                $("#SPEARContent").hide();
+                $("#ImprovContent").hide();
+                $("#PianoContent").hide();
+                $("#FencingContent").hide();
+
                 $("#headerAbout").click(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#aboutMainDiv").offset().top}, 1000);
+                });
+
+                $("#headerExtracurricular").click(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#extracurricularTitleDiv").offset().top}, 1000);
+                });
+
+                $("#CensusTitle").click(function() {
+                    $(currentExtracurricularTitle).css('color', '#ACA69C');
+                    $("#CensusTitle").css('color', 'orange');
+                    $("#CensusContent").show();
+                    $(currentExtracurricularContent).hide();
+                    currentExtracurricularContent = "#CensusContent";
+                    currentExtracurricularTitle = "#CensusTitle";
+                });
+
+                $("#SPEARTitle").click(function() {
+                    $(currentExtracurricularTitle).css('color', '#ACA69C');
+                    $("#SPEARTitle").css('color', 'orange');
+                    $("#SPEARContent").show();
+                    $(currentExtracurricularContent).hide();
+                    currentExtracurricularContent = "#SPEARContent";
+                    currentExtracurricularTitle = "#SPEARTitle";
+                });
+
+                /*$("#ImprovTitle").click(function() {
+                    $(currentExtracurricularContent).slideUp(500);
+                    $(currentExtracurricularTitle).css('color', '#ACA69C')
+                    $("#ImprovContent").show();
+                    $("#ImprovTitle").css('color', 'orange');
+                    currentExtracurricularContent = "#ImprovContent";
+                    currentExtracurricularTitle = "#ImprovTitle"
+                });
+
+                $("#PianoTitle").click(function() {
+                    $(currentExtracurricularContent).slideUp(500);
+                    $(currentExtracurricularTitle).css('color', '#ACA69C')
+                    $("#PianoContent").show();
+                    $("#PianoTitle").css('color', 'orange');
+                    currentExtracurricularContent = "#PianoContent";
+                    currentExtracurricularTitle = "#PianoTitle"
+                });
+
+                $("#FencingTitle").click(function() {
+                    $(currentExtracurricularContent).slideUp(500);
+                    $(currentExtracurricularTitle).css('color', '#ACA69C')
+                    $("#FencingContent").show();
+                    $("#FencingTitle").css('color', 'orange');
+                    currentExtracurricularContent = "#FencingContent";
+                    currentExtracurricularTitle = "#FencingTitle"
+                });*/
+
+                /*$("#headerAbout").click(function(){
                     $('html, body').animate({
                         scrollTop: $("#aboutMainDiv").offset().top}, 1000);
                 });
@@ -105,7 +181,7 @@
                 $("#headerExtracurricular").click(function(){
                     $('html, body').animate({
                         scrollTop: $("#extracurricularMainDiv").offset().top}, 1000);
-                });
+                });*/
             });
         </script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -113,6 +189,6 @@
             AOS.init();
         </script>
 
-
     </body>
+
 </html>
