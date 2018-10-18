@@ -1,119 +1,203 @@
 html{
     margin: 0px;
     padding: 0px;
+    display: flex;
+    /*letter-spacing: 0.125em;*/
+    line-height: 1;
+    font-size: 1.4vh;
 }
 
 body{
-    background-color: white;
-    height: 100vh;
     width: 100%;
+    font-family: 'Titillium Web', sans-serif;
     margin: 0;
-    padding: 0;
-}
-
-.headertop{
-    background-color: rgb(230,230,230, 0.7);
-    height: 10vh;
-    width: 100%;
-    position: fixed;
+    font-family: Ubuntu;
     display: flex;
-    justify-content:flex-start;
-    padding-left: 1%;
+    flex-direction: row;
+    background-color: #fafafa;
+    /*font-family: futura-pt;*/
 }
 
-.headerlist{
-    width: 60%;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
-
-li{
-    display: inline;
-    text-align: center;
-    opacity: 1;
-}
-
-.name{
-    font-family: 'Bookman Old Style';
-    padding: 0;
-    text-align: center;
-    margin: 0;
-}
-
-div{
+#sidebar{
     height: 100vh;
-    width: 100%;
-}
-
-.content{
+    width: 32%;
+    background-color: #fafafa;
+    color: #4a4a4a;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    padding-left: 3%;
+    padding-top: 5%;
+    position: fixed;
+}
+
+#myname{
+    font-size: 3em;
+    /*font-size: 7.2vw;*/
+}
+
+i{
+    color: #005ba9;
+}
+
+#skillsIntro, #extracurricularIntro{
+    color: #005ba9;
+    -webkit-transition: color 0.3s;
+}
+
+#skillsIntro:hover, #extracurricularIntro:hover{
+    cursor: pointer;
+    color: #207bc9;
+}
+
+#logosDiv{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(255,255,255);
-    opacity: 0.7;
-    width: 60%;
-    height: 40%;
-    margin-left: 20%;
-    border: box;
-    border-radius: 10px;
-    border-color: black;
-    border-style: solid;
-    border-width: thin;
-    color: black;
 }
 
-#div1{
-    background-image: url("Stonewallpaper.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+img, i {
+    /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .3s ease-in-out;
+    }
+
+img:hover, i:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+}
+
+h1 {
+    font-family: Ubuntu;
+    /*font-family: "Oswald", sans-serif;*/
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 0%;
+}
+
+h2 {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 0%;
+}
+
+.contentTitle{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 400;
+    -webkit-transition: color 0.3s;
+}
+
+.contentTitle:hover{
     color: white;
-}
-
-#div2{
-    background-color: orange;
-}
-
-#div3{
-    background-color: green;
-}
-
-#div4{
-    background-color: blue;
-}
-
-#ScrollDown{
-    position:
-}
-
-h2{
-    text-align: center;
-    padding: 13vh;
-    margin-top: 0;
+    cursor: pointer;
 }
 
 p{
-    text-align: center;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1.1em;
+    margin-top: 0%;
 }
 
-a{
+h5{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: 100;
+    margin-top: -1em;
+    font-size: 1em;
+    /*text-decoration: underline;*/
     color: white;
-    text-decoration: none;
 }
 
-#a1:hover{
-    color: black;
+li{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 1.1em;
+    margin-top: 0%;
 }
 
-#a2:hover{
-    color: orange;
+#content{
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 100vh;
+    /*overflow: auto;*/
+    margin-left: 35%;
 }
 
-#a3:hover{
-    color: green;
+#contentDiv1{
+    padding: 5%;
+    color: #dadada;
+    min-height: 55vh;
+    background-color: #005ba9;
+    border-left: solid 2.3em #0057a1;
+    background-color: #507C90;
+    border-left: solid 2.3em #406C80;
 }
 
-#a4:hover{
-    color: blue;
+#contentDiv2{
+    padding: 5%;
+    color: #f3f3f3;
+    height: 55vh;
+    background-color: #f4b93d;
+    border-left: solid 2.3em #eab030;
+    background-color: #C9C5BF;
+    border-left: solid 2.3em #B9B5AF;
+}
+
+#contentDiv3{
+    padding: 5%;
+    color: #dadada;
+    height: 55vh;
+    background-color: #b4ddbf;
+    border-left: solid 2.3em #a4cdaf;
+    background-color: #77726B;
+    border-left: solid 2.3em #67625B;
+}
+
+#contentDiv4{
+    padding: 5%;
+    color: #dadada;
+    height: 55vh;
+    background-color: #4a4a4a;
+    border-left: solid 2.3em #3a3a3a;
+    background-color: #39444B;
+    border-left: solid 2.3em #29343B;
+}
+
+#insideContent{
+    height: 80%;
+    width: 100%;
+    padding-top: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+
+#contentTitles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 26%;
+    height: 60%;
+    border-left: solid 1px;
+    padding-left: 1%;
+}
+
+.contentContent{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding-left: 5%;
 }
