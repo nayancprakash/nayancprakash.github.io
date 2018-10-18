@@ -65,7 +65,9 @@ header, footer{
 
 #aboutMainDiv{
     width: 100%;
-    height: 20vh;
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
     background-color: #003140;
     color: #63838C;
     display: flex;
@@ -76,7 +78,7 @@ header, footer{
 
 #extracurricularTitleDiv{
     width: 50em;
-    height: 40vh;
+    height: auto;
     background-color: #201A16;
     display: flex;
     flex-direction: column;
