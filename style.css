@@ -204,7 +204,7 @@ li{
     padding-left: 5%;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
 
     body{
         width: 100%;
