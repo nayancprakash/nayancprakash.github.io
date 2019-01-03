@@ -114,7 +114,7 @@ h5{
     font-variant: small-caps;
     font-weight: 100;
     margin-top: -1em;
-    font-size: 1em;
+    font-size: 1.5em;
     /*text-decoration: underline;*/
     color: white;
 }
@@ -228,7 +228,7 @@ li{
 
 }
 
-@media screen and (min-device-aspect-ratio: 9/16) {
+@media screen and (max-aspect-ratio: 1/1) {
 
     body{
         width: 100%;
@@ -248,6 +248,41 @@ li{
     #content{
         width: 100%;
         margin-left: 0px;
+    }
+
+    #contentDiv1{
+        border-top: solid 2.3em #406C80;
+        border-left: solid 0em #3a3a3a;
+    }
+
+    #contentDiv2{
+        border-top: solid 2.3em #B9B5AF;
+        border-left: solid 0em #3a3a3a;
+    }
+
+    #contentDiv3{
+        border-top: solid 2.3em #67625B;
+        border-left: solid 0em #3a3a3a;
+    }
+
+    #contentDiv4{
+        border-top: solid 2.3em #29343B;
+        border-left: solid 0em #3a3a3a;
+    }
+
+    #insideContent{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 5%;
+    }
+
+    #contentTitles{
+        flex-direction: row;
+        width: 80%;
+        border-left: solid 0px;
+        height: auto;
+        border-bottom: solid 1px;
     }
 
 }
