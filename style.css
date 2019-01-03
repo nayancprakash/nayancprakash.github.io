@@ -204,7 +204,7 @@ li{
     padding-left: 5%;
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
 
     body{
         width: 100%;
@@ -226,7 +226,7 @@ li{
         margin-left: 0px;
     }
 
-}
+} */
 
 @media screen and (max-aspect-ratio: 1/1) {
 
@@ -283,6 +283,12 @@ li{
         border-left: solid 0px;
         height: auto;
         border-bottom: solid 1px;
+    }
+
+    .contentContent{
+        padding-top: 3%;
+        width: 80%;
+        padding-left: 0%;
     }
 
 }
