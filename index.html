@@ -13,8 +13,8 @@
         <div id="sidebar">
             <h1><span id="myname" style="color: #005ba9;">Nayan</span></h1>
             <h1><span id="myname">Prakash</span></h1>
-            <h2>Hi. I'm Nayan.</h2>
             <h2>I am a second year <b>Software Engineering</b> Co-op student at the University of Alberta.</h2>
+            <h2>Let me introduce <span id="aboutMeIntro">myself</span>.</h2>
             <h2>I am constantly trying to learn new things and <span id="skillsIntro">improve</span>.</h2>
             <h2>I find joy in being social and love to stay <span id="extracurricularIntro">involved</span>.</h2>
             <div id="logosDiv">
@@ -29,10 +29,10 @@
                 <h5 data-aos="fade-right">.001</h5>
                 <h5 data-aos="fade-right">Skills</h5>
                 <div id="insideContent">
-                    <div id="contentTitles">
+                    <!--<div id="contentTitles">
                         <h1 id="LanguagesTitle" class="contentTitle">Languages</h1>
                         <h1 id="ToolTitle" class="contentTitle">Tools</h1>
-                        <h1 id="FrameworksTitle" class="contentTitle">Frameworks</h1>
+                        <h1 id="FrameworksTitle" class="contentTitle">Frameworks and Engines</h1>
                     </div>
                     <div id="div1Content" class="contentContent">
                         <ul id="languagesList">
@@ -58,7 +58,44 @@
                             <li>jQuery</li>
                             <li>Tornado</li>
                             <li>Node.js</li>
+                            <li>React Native</li>
                         </ul>
+                    </div>-->
+                    <div id="skillsContainer">
+                        <div id="skillsItem">
+                            <h1 id="LanguagesTitle" class="contentTitle">Languages</h1>
+                            <ul id="languagesList">
+                                <li>Java</li>
+                                <li>HTML & CSS</li>
+                                <li>Python</li>
+                                <li>C++</li>
+                                <li>PHP</li>
+                                <li>SQL</li>
+                                <li>JavaScript</li>
+                                <li>Matlab</li>
+                                <li>Processing</li>
+                            </ul>
+                        </div>
+                        <div id="skillsItem">
+                            <h1 id="ToolTitle" class="contentTitle">Tools</h1>
+                            <ul id="toolsList">
+                                <li>Linux</li>
+                                <li>MacOS</li>
+                                <li>Windows</li>
+                                <li>Bash</li>
+                                <li>Git</li>
+                                <li>Microsoft Office Suite</li>
+                            </ul>
+                        </div>
+                        <div id="skillsItem">
+                            <h1 id="FrameworksTitle" class="contentTitle">Frameworks and Engines</h1>
+                            <ul id="frameworksList">
+                                <li>jQuery</li>
+                                <li>Tornado</li>
+                                <li>Node.js</li>
+                                <li>React Native</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -67,8 +104,9 @@
                 <h5 data-aos="fade-right">Extracurriculars</h5>
                 <div id="insideContent">
                     <div id="contentTitles">
-                        <h1 id="CensusTitle" class="contentTitle">Census</h1>
-                        <h1 id="SpearTitle" class="contentTitle">Space Exploration Alberta Robotics</h1>
+                        <h1 id="CensusTitle" class="contentTitleClickable">Census</h1>
+                        <h1 id="SpearTitle" class="contentTitleClickable">SPEAR</h1>
+                        <h1 id="ABATTLETitle" class="contentTitleClickable">A* Battles</h1>
                         <!--<h1 id="ImprovTitle" class="contentTitle">Improvisation</h1>
                         <h1 id="PianoTitle" class="contentTitle">Piano</h1>
                         <h1 id="FencingTitle" class="contentTitle">Fencing</h1>-->
@@ -77,7 +115,8 @@
                         <div id="CensusContent">
                             <p>
                                 Census is an area-based polling app currently being developed
-                                by myself and two other Software Engineering Students. Census
+                                by myself and two other Software Engineering Students, <a href="https://www.ryanshukla.com">
+                                Ryan Shukla</a> and <a href="https://www.mitchadam.com">Mitch Adam</a>. Census
                                 is designed to be enjoyable, informative and useful to individuals,
                                 businesses and governments alike.
                             </p>
@@ -101,15 +140,21 @@
                                 This year, as a member of the AI team, I will be assisting in developing a Computer Vision system that will allow the Mars rover, TARS,
                                 to autonomously navigate its way through unwieldy terrain.
                             </p>
+                            <p>
+                                This is being done
+                            </p>
                         </div>
-                        <div id="ImprovContent">
-
-                        </div>
-                        <div id="PianoContent">
-
-                        </div>
-                        <div id="FencingContent">
-
+                        <div id="ABATTLEContent">
+                            <p>
+                                A* Battles is a two-player capture the flag game that utilizes the A* Pathfinding algorithm. Play locally or online!
+                            </p>
+                            <p>
+                                Developed by <a href="mitchadam.com">Mitch Adam</a> and myself, A* Battles was developed in Python and utilizes
+                                both Tornado as a framework and WebSockets as a protocol for online multiplayer.
+                            </p>
+                            <p>
+                                Checkout the code <a href="https://github.com/mitchadam/astar-battles">here</a>!
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -127,6 +172,10 @@
                     Throughout all of this, my love for math and sciences grew. During high school, physics, chemistry and computer sciences courses
                     were my favourite parts of the day. When it finally came time to apply for University it was my love for math, sciences and computers that
                     drew me into applying to Engineering.
+                </p>
+                <p>
+                    My fascination with the balance between technicality and creativity that initially drew my into music production is the same fascination that
+                    drives me through Software Engineering. The ability to create elegant and useful software through technical knowledge and expertise. 
                 </p>
                 <!--<div id="insideContent">
                     <div id="contentTitles">
@@ -170,14 +219,19 @@
                 $("#languagesList").fadeIn(500);
                 $("#CensusContent").fadeIn(500);
 
+                $("#aboutMeIntro").click(function(){
+                    $('html, body').animate({
+                        scrollTop: $("#contentDiv3").offset().top}, 500);
+                });
+
                 $("#skillsIntro").click(function(){
                     $('html, body').animate({
-                        scrollTop: $("#contentDiv1").offset().top}, 1000);
+                        scrollTop: $("#contentDiv1").offset().top}, 500);
                 });
 
                 $("#extracurricularIntro").click(function(){
                     $('html, body').animate({
-                        scrollTop: $("#contentDiv2").offset().top}, 1000);
+                        scrollTop: $("#contentDiv2").offset().top}, 500);
                 });
 
                 $("#LanguagesTitle").click(function() {
@@ -197,13 +251,19 @@
                 $("#CensusTitle").click(function() {
                     if($("#CensusContent").is(":hidden")){
                         $("#div2Content").children().hide(0);
-                        $("#CensusContent").fadeIn(500);
+                        $("#CensusContent").fadeIn(200);
                     }
                 });
                 $("#SpearTitle").click(function() {
                     if($("#SPEARContent").is(":hidden")){
                         $("#div2Content").children().hide(0);
-                        $("#SPEARContent").fadeIn(500);
+                        $("#SPEARContent").fadeIn(200);
+                    }
+                });
+                $("#ABATTLETitle").click(function() {
+                    if($("#ABATTLEContent").is(":hidden")){
+                        $("#div2Content").children().hide(0);
+                        $("#ABATTLEContent").fadeIn(200);
                     }
                 });
             });

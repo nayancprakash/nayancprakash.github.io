@@ -40,12 +40,16 @@ i{
     color: #005ba9;
 }
 
-#skillsIntro, #extracurricularIntro{
+a{
+    text-decoration: none;
+}
+
+#skillsIntro, #extracurricularIntro, #aboutMeIntro, a{
     color: #005ba9;
     -webkit-transition: color 0.3s;
 }
 
-#skillsIntro:hover, #extracurricularIntro:hover{
+#skillsIntro:hover, #extracurricularIntro:hover, #aboutMeIntro:hover, a:hover{
     cursor: pointer;
     color: #207bc9;
 }
@@ -92,10 +96,27 @@ h2 {
     font-family: Ubuntu;
     font-style: normal;
     font-weight: 400;
+    flex-wrap: wrap;
+    height: 20%;
+    width: 100%;
+    /*flex-grow: 1;
+    flex-basis: 0;*/
     -webkit-transition: color 0.3s;
 }
 
-.contentTitle:hover{
+.contentTitleClickable{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 400;
+    flex-wrap: wrap;
+    height: 20%;
+    width: 100%;
+    /*flex-grow: 1;
+    flex-basis: 0;*/
+    -webkit-transition: color 0.3s;
+}
+
+.contentTitleClickable:hover{
     color: white;
     cursor: pointer;
 }
@@ -150,7 +171,7 @@ li{
 #contentDiv2{
     padding: 5%;
     color: #f3f3f3;
-    height: 55vh;
+    min-height: 55vh;
     background-color: #f4b93d;
     border-left: solid 2.3em #eab030;
     background-color: #C9C5BF;
@@ -160,7 +181,7 @@ li{
 #contentDiv3{
     padding: 5%;
     color: #dadada;
-    height: 55vh;
+    min-height: 55vh;
     background-color: #b4ddbf;
     border-left: solid 2.3em #a4cdaf;
     background-color: #77726B;
@@ -170,7 +191,7 @@ li{
 #contentDiv4{
     padding: 5%;
     color: #dadada;
-    height: 55vh;
+    min-height: 55vh;
     background-color: #4a4a4a;
     border-left: solid 2.3em #3a3a3a;
     background-color: #39444B;
@@ -203,6 +224,24 @@ li{
     width: 35%;
     padding-left: 5%;
 }
+
+#skillsContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#skillsItem{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
 
 /* @media screen and (max-width: 800px) {
 
@@ -289,6 +328,10 @@ li{
         padding-top: 3%;
         width: 80%;
         padding-left: 0%;
+    }
+
+    .contentTitle{
+        text-align: center;
     }
 
 }
