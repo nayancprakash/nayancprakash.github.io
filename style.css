@@ -8,7 +8,7 @@ html{
 }
 
 @media screen and (max-device-aspect-ratio: 1/1) {
-    html{
+    p{
         font-size: 2vh;
     }
 }
